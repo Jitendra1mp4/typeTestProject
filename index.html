@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Below is the font family for heading  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+   <!-- Below three lines are font family link for typing words -->
+   <!--
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+-->
+   <!-- Below three lines are font family link for typing words -->
+   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
+
+   <!-- Below three lines are font family link for typing words -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="Styles/style.css" <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Welcome to Typing speed JUMP</title>
+</head>
+
+<body>
+   <h1 id="top">Welcome to typing speed </h1>
+   <p> Start typing bellow </p>
+   <div>
+      <form action="">
+         <p>
+            <!-- <input type="text" name="typing" id="typing"> -->
+            <textarea name="type" spellcheck="false" id="type" rows="1">
+
+         </textarea>
+         </p>
+         <div id="result" align=center>
+            <input type="number" disabled name="" id="speed" class="rst">
+            <!-- <span class="rst">Word/minut</span> -->
+            <input type="number" disabled name="" id="rightWords" class="rst">
+            <!-- <span class="rst">Words</span> -->
+            <input type="number" disabled name="" id="wrongWords" class="rst">
+            <!-- <span class="rst">Words</span> -->
+         </div>
+         <center>
+            <input type="button" id="btn_analyze" onclick="countWord()" value="Analize my Skill" />
+         </center>
+      </form>
+   </div>
+   <script src="Scripts/script.js"></script>
+</body>
+
+</html>
