@@ -3,21 +3,33 @@ body{
 }
 h1{
    text-align: center;
+   text-shadow: 1px 1px 5px rgb(65 ,188 ,129);
    color: rgb(65 ,188 ,129) ;
    padding-top: 10%;
-   /* font-size: larger; */
-   /* font-family: 'Bahnschrift' ; */
    font-family: 'Roboto Slab', serif;
-   /* text-shadow: 1px 1px 3px rgb(22, 175, 124) ; */
 }
 
-p{
+#p_instruct{
+   text-align: center;
    color : rgb(225 91 21) ;
+   text-shadow: 1px 1px 10px red;
    text-align: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-#type{
+#taskSentence{
+   color: rgb(186, 162, 230);
+   height: 20px;
+   outline: none;
+   font-size: 20px;
+   background-color: rgba(255, 255, 255, 0);
+   font-family: 'Roboto Slab', serif;
+   font-size: x-large;
+   margin-top: 20pt;
+   margin-bottom: 20pt;
+   padding-bottom: 5px;
+   border-bottom: 3px solid aquamarine;
+}
+#text_type{
    margin-right: 10%;
    margin-left: 10%;
    width: 80%;
@@ -35,7 +47,6 @@ p{
    color: aliceblue;
    overflow:hidden ;
 }
-
 #btn_analyze{
    background-color: rgb(20 5 44);
    outline: none;
@@ -50,17 +61,24 @@ p{
 .rst{
    /* visibility: hidden; */
        /* visibility: hidden; */
-       margin: 17px 45pt;
        height: 1cm;
        width: 2cm;
+       margin: 10pt 20pt;
        border-radius: 5px;
-       outline: none;
        border: 2px solid rgb(140 29 159);
-       background-color: #00ffff00;
-       color: aliceblue;
-       text-align: center;
+       color: rgb(255, 255, 255);
        font-weight: 900;
-       font-size: 42px;
-       padding: 4pt;
-
+       font-size: 20px;
+       padding: 2pt;
+       background-color: #ff000000;
+      }
+      
+.valueBox {
+   text-align: center;
+   color: rgb(255, 255, 255);
+   outline: none;
+   background-color: #ff000000;
+   width: 2em;
+   font-weight: 900;
+   font-size: 20px;
 }

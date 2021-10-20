@@ -25,28 +25,45 @@
 
    <link rel="stylesheet" href="Styles/style.css" <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=0.8">
    <title>Welcome to Typing speed JUMP</title>
 </head>
 
 <body>
-   <h1 id="top">Welcome to typing speed </h1>
-   <p> Start typing bellow </p>
+   <h1 id="top" align=center>Welcome to Typing Practise</h1>
+   <p id="p_instruct"> Start typing the sentence bellow </p>
    <div>
       <form action="">
          <p>
             <!-- <input type="text" name="typing" id="typing"> -->
-            <textarea name="type" spellcheck="false" id="type" rows="1">
+            <center>
+               <input type="text" id="taskSentence" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti cupiditate aliquam maxime modi ratione eligendi earum id debitis omnis. Id" >
+               <br>
 
-         </textarea>
+               <input type=text name="type" spellcheck="false" id="text_type" >
+            </center>
          </p>
          <div id="result" align=center>
-            <input type="number" disabled name="" id="speed" class="rst">
-            <!-- <span class="rst">Word/minut</span> -->
-            <input type="number" disabled name="" id="rightWords" class="rst">
-            <!-- <span class="rst">Words</span> -->
-            <input type="number" disabled name="" id="wrongWords" class="rst">
-            <!-- <span class="rst">Words</span> -->
+            <span class="rst">
+               <input type="number" class="valueBox" disabled name="" id="speed">
+               <span>Word/minut</span>
+            </span>
+            <!-- <br> <br> -->
+            <span class="rst">
+               <input type="number" class="valueBox" disabled name="" id="rightWords">
+               <span>Words</span>
+            </span>
+            <!-- <br> <br> -->
+            <span class="rst">
+               <input type="number" class="valueBox" disabled name="" id="wrongWords">
+               <span>Words</span>
+            </span>
+            <!--
+                <br> <br> -->
+            <span class="rst">
+               <input type="number" class="valueBox" disabled name="" id="chars">
+               <span>Charecters</span>
+            </span>
          </div>
          <center>
             <input type="button" id="btn_analyze" onclick="countWord()" value="Analize my Skill" />
